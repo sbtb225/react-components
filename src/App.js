@@ -8,6 +8,7 @@ import Analytics from './pages/Analytics';
 import Products from './pages/Products';
 import Interview from './pages/Interview';
 import Edit_Profile from './pages/Edit_Profile';
+import TableList from './pages/table/TableList';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route exact path='/editprofile' element={<Edit_Profile/>}></Route>
       {/* <Route exact path='/Companyinternship' element={<CompanyInternship/>}></Route> */}
       {/* <Route exact path='/internshipstudent' element={<InternshipStudent/>}></Route> */}
+      <Route exact path='/table' element={<TableList/>}></Route>
       <Route exact path='/videointerview' element={<Interview/>}></Route>
 
 

@@ -15,6 +15,7 @@ import InterpreterModeIcon from '@mui/icons-material/InterpreterMode';
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
+import TableBarIcon from '@mui/icons-material/TableBar';
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import { useNavigate } from "react-router-dom";
 import { useAppStore } from "../appStore";
@@ -239,11 +240,11 @@ export default function Sidenav() {
             </ListItemButton>
           </ListItem> */}
           
-          {/* <ListItem
+           <ListItem
             disablePadding
             sx={{ display: "block" }}
             onClick={() => {
-              navigate("/internshipstudent");
+              navigate("/table");
             }}
           >
             <ListItemButton
@@ -253,16 +254,16 @@ export default function Sidenav() {
                 px: 2.5,
               }}
             >
-              <FactoryIcon 
+              <TableBarIcon 
                 sx={{
                   minWidth: 0,
                   mr: open ? 3 : "auto",
                   justifyContent: "center",
                 }}
-              ></FactoryIcon>
-              <ListItemText primary="Internship Student" sx={{ opacity: open ? 1 : 0 }} />
+              ></TableBarIcon>
+              <ListItemText primary="Table" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
-          </ListItem> */}
+          </ListItem>
 
           <ListItem
             disablePadding
