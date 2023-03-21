@@ -1,5 +1,5 @@
 import * as React from "react";
-import { styled} from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MuiDrawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -11,6 +11,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import HomeIcon from "@mui/icons-material/Home";
 import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 import FactoryIcon from '@mui/icons-material/Factory';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import InterpreterModeIcon from '@mui/icons-material/InterpreterMode';
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -80,9 +81,9 @@ export default function Sidenav() {
       <Box height={30} />
 
       <Drawer variant="permanent" open={open}>
-        <DrawerHeader style={{marginTop:-2}}/>
+        <DrawerHeader style={{ marginTop: -2 }} />
         <Divider />
-        <List sx={{height:100 + 'vh',backgroundColor:"#132c1f",color:"#fff"}}>
+        <List sx={{ height: 100 + 'vh', backgroundColor: "#132c1f", color: "#fff" }}>
 
           <ListItem
             disablePadding
@@ -179,7 +180,7 @@ export default function Sidenav() {
                 px: 2.5,
               }}
             >
-              <AnalyticsIcon 
+              <AnalyticsIcon
                 sx={{
                   minWidth: 0,
                   mr: open ? 3 : "auto",
@@ -204,7 +205,7 @@ export default function Sidenav() {
                 px: 2.5,
               }}
             >
-              <PersonAddIcon 
+              <PersonAddIcon
                 sx={{
                   minWidth: 0,
                   mr: open ? 3 : "auto",
@@ -215,11 +216,11 @@ export default function Sidenav() {
             </ListItemButton>
           </ListItem>
 
-          {/* <ListItem
+          <ListItem
             disablePadding
             sx={{ display: "block" }}
             onClick={() => {
-              navigate("/Companyinternship");
+              navigate("/calendar");
             }}
           >
             <ListItemButton
@@ -229,18 +230,18 @@ export default function Sidenav() {
                 px: 2.5,
               }}
             >
-              <FactoryIcon 
+              <CalendarMonthIcon
                 sx={{
                   minWidth: 0,
                   mr: open ? 3 : "auto",
                   justifyContent: "center",
                 }}
-              ></FactoryIcon>
-              <ListItemText primary="Company internship" sx={{ opacity: open ? 1 : 0 }} />
+              ></CalendarMonthIcon>
+              <ListItemText primary="Calendar" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
-          </ListItem> */}
-          
-           <ListItem
+          </ListItem>
+
+          <ListItem
             disablePadding
             sx={{ display: "block" }}
             onClick={() => {
@@ -254,7 +255,7 @@ export default function Sidenav() {
                 px: 2.5,
               }}
             >
-              <TableBarIcon 
+              <TableBarIcon
                 sx={{
                   minWidth: 0,
                   mr: open ? 3 : "auto",

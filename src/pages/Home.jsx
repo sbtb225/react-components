@@ -13,7 +13,7 @@ export default function Home() {
     
     <>
     <Navbar/>
-    <Box height={90}/>
+    <Box height={60}/>
     <Box sx={{ display: 'flex' }} className='bgcolor paddingall'>
     <Sidenav/>
     {/* <ResponsiveDrawer/> */}

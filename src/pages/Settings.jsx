@@ -10,7 +10,7 @@ export default function Settings() {
   return (
     <>
     <Navbar/>
-    <Box height={70}/>
+    <Box height={60}/>
     <Box sx={{ display: 'flex' }} className="bgcolor">
     <Sidenav/>
     <Box component="main" sx={{ flexGrow: 1, p: 3 }}>

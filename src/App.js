@@ -9,6 +9,7 @@ import Products from './pages/Products';
 import Interview from './pages/Interview';
 import Edit_Profile from './pages/Edit_Profile';
 import TableList from './pages/table/TableList';
+import Calendar from './pages/calendar/Calendar';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       {/* <Route exact path='/Companyinternship' element={<CompanyInternship/>}></Route> */}
       {/* <Route exact path='/internshipstudent' element={<InternshipStudent/>}></Route> */}
       <Route exact path='/table' element={<TableList/>}></Route>
+      <Route exact path='/calendar' element={<Calendar/>}></Route>
       <Route exact path='/videointerview' element={<Interview/>}></Route>
 
 

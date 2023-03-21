@@ -3,8 +3,9 @@ import Box from '@mui/material/Box';
 
 import Navbar from '../../components/Navbar'
 import Sidenav from '../../components/Sidenav'
-import TableExport from '../../components/TableExport';
-import Table from '../../components/Table';
+import Table from '../../components/table/Table';
+import TableExport from '../../components/table/Table';
+
 
 export default function TableList() {
   return (
