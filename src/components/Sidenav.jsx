@@ -10,6 +10,7 @@ import Divider from "@mui/material/Divider";
 import SettingsIcon from "@mui/icons-material/Settings";
 import HomeIcon from "@mui/icons-material/Home";
 import LiveHelpIcon from "@mui/icons-material/LiveHelp";
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import FactoryIcon from '@mui/icons-material/Factory';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import InterpreterModeIcon from '@mui/icons-material/InterpreterMode';
@@ -263,6 +264,31 @@ export default function Sidenav() {
                 }}
               ></TableBarIcon>
               <ListItemText primary="Table" sx={{ opacity: open ? 1 : 0 }} />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem
+            disablePadding
+            sx={{ display: "block" }}
+            onClick={() => {
+              navigate("/quiz");
+            }}
+          >
+            <ListItemButton
+              sx={{
+                minHeight: 48,
+                justifyContent: open ? "initial" : "center",
+                px: 2.5,
+              }}
+            >
+              <QuestionMarkIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : "auto",
+                  justifyContent: "center",
+                }}
+              ></QuestionMarkIcon>
+              <ListItemText primary="Quiz" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
 
