@@ -16,7 +16,7 @@ export default function List() {
     <Sidenav/>
     <Box component="main" sx={{ flexGrow: 1, p: 3 }} className='bgcolor'>
     <Paper className="bgcolor paddingall" 
-    style={{paddingTop:'100px'}}>
+    style={{paddingTop:'10px'}}>
         <InterviewInstructions/>
         <VideoRecording/>
     </Paper>
